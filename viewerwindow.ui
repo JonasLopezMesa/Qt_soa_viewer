@@ -149,20 +149,32 @@
    <property name="text">
     <string>Abrir película</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
   </action>
   <action name="actionAcerca_de">
    <property name="text">
     <string>Acerca de</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
    </property>
   </action>
   <action name="actionPreferencias">
    <property name="text">
     <string>Preferencias</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
   </action>
   <action name="actionCapturar">
    <property name="text">
     <string>Capturar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
    </property>
   </action>
  </widget>

@@ -163,6 +163,16 @@ void ViewerWindow::on_actionCapturar_triggered()
 }
 
 void ViewerWindow::capturaImagen(QImage image) {
+    //Obtener la hora
+    QTime * tim = new QTime;
+    QString hora;
+    hora = tim->currentTime().toString();
+    //ui->textEdit->setText(hora);
+    //Pintar la hora en el frame
+    QPainter time(&image);
+    time.setPen(Qt::red);
+    time.drawText(20,20,hora);
+    //Mostrar el frame en el label
     QPixmap pix;
     pix = pix.fromImage(image);
     ui->label->setPixmap(pix);
